@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import simpleResolver from './simpleResolver';
+import Navigation from './navigation';
 
 const MetaCharset = () => <meta charSet="utf-8" />;
 const MetaContent = () => <meta name="viewport" content="width=device-width, initial-scale=1.1, shrink-to-fit=no" />;
@@ -10,6 +11,7 @@ function App() {
       <div className="container-fluid">
         <MetaCharset />
         <MetaContent />
+        <Navigation />
         {simpleResolver(window.location.pathname)}
       </div>
   );
