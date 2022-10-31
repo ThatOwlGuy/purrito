@@ -35,7 +35,7 @@ p {
   margin-top: 1rem;
 }
 
-.navbar-plant {
+.navbar {
   height: 5rem;
   margin-left: -15px;
   margin-right: -15px;
@@ -43,14 +43,14 @@ p {
   z-index: 2;
 }
 
-.plant-title {
+.title {
   color: var(--tortillaOrange) !important;
   font-size: xx-large !important;
   font-weight: bold;
   margin-left: 2rem;
 }
 
-.plant-nav-links {
+.nav-links {
   color: var(--tortillaOrange) !important;
   margin-right: 1rem !important;
 }
