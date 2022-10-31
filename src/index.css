@@ -5,6 +5,7 @@
   --chorizoCode: rgb(216, 0, 0);
   --purritoverlay: rgb(34, 0, 0);
   --quesoBlanco: rgb(255, 245, 198);
+  --navHeight: 4rem;
 }
 
 body {
@@ -36,7 +37,7 @@ p {
 }
 
 .navbar {
-  height: 5rem;
+  height: var(--navHeight);
   margin-left: -15px;
   margin-right: -15px;
   background-color: var(--salsaRed);
@@ -48,9 +49,10 @@ p {
   font-size: xx-large !important;
   font-weight: bold;
   margin-left: 2rem;
+  text-decoration: none;
 }
 
-.nav-links {
+.hamburger-ico {
   color: var(--tortillaOrange) !important;
   margin-right: 1rem !important;
 }
@@ -69,13 +71,17 @@ p {
   border-width: 0;
 }
 
+.nav-content {
+  margin-top: 0.5rem;
+}
+
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 5rem;
+  top: var(--navHeight);
   background-color: var(--purritoverlay);
   overflow-x: hidden;
   transition: 0.3s;
@@ -83,7 +89,7 @@ p {
 
 .overlay-content {
   position: relative;
-  top: 4rem; 
+  top: 2rem; 
   width: 100%;
   text-align: center;
   transition: 0.4s;
