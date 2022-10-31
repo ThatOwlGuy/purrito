@@ -1,3 +1,12 @@
+:root {
+  --tortillaOrange: rgb(229, 166, 100);
+  --salsaRed: rgb(167, 36, 36);
+  --burntChorizo: rgb(47, 0, 0);
+  --chorizoCode: rgb(216, 0, 0);
+  --purritoverlay: rgb(34, 0, 0);
+  --quesoBlanco: rgb(255, 245, 198);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +14,128 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--tortillaOrange) !important;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+pre code {
+  background-color: var(--burntChorizo);
+  color: var(--chorizoCode) !important;
+  display: block;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.navbar-plant {
+  height: 5rem;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: var(--salsaRed);
+  z-index: 2;
+}
+
+.plant-title {
+  color: var(--tortillaOrange) !important;
+  font-size: xx-large !important;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.plant-nav-links {
+  color: var(--tortillaOrange) !important;
+  margin-right: 1rem !important;
+}
+
+.icon-button {
+  color: var(--tortillaOrange) !important;
+  margin: 0rem;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.navbar-button {
+  background-color:transparent;
+  border-width: 0;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 5rem;
+  background-color: var(--purritoverlay);
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 4rem; 
+  width: 100%;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1 !important;
+}
+
+.info-panel {
+  border-radius: 1rem;
+  background: var(--quesoBlanco);
+  padding: 2rem;
+  margin: 2rem 2rem;
+  box-shadow: var(--salsaRed) 0rem 0.45rem 0.75rem;
+}
+
+.widget-panel {
+  border-radius: 1rem;
+  background: var(--salsaRed);
+  padding: 2rem;
+  margin: 2rem 2rem;
+  color: var(--tortillaOrange);
+  box-shadow: var(--purritoverlay) 0rem 0.45rem 0.75rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.flex-child-input {
+  flex: 16;
+} 
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
