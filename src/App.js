@@ -12,7 +12,9 @@ function App() {
         <MetaCharset />
         <MetaContent />
         <Navigation />
-        {simpleResolver(window.location.pathname)}
+        <div style={{marginTop:"var(--navHeight)"}}>
+          {simpleResolver(window.location.pathname)}
+        </div>
       </div>
   );
 }

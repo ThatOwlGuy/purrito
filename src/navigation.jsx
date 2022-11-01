@@ -34,6 +34,7 @@ function HamburgerMenu() {
                     {(!isOnPage("/home") && !isOnPage("/")) &&
                         <Nav.Link className="nav-links" href="/home">Home</Nav.Link>
                     }
+                    <Nav.Link className="nav-links" href="/purrito-burrito">¡Purrito!</Nav.Link>
                     <Nav.Link className="nav-links" href="/cart">Cart</Nav.Link>
                     <Nav.Link className="nav-links" href="/about">About Us</Nav.Link>
                 </Nav>
