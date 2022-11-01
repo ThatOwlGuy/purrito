@@ -8,16 +8,29 @@
   --navHeight: 4rem;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  top: var(--navHeight);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  z-index: 0 !important;
   background-color: var(--tortillaOrange) !important;
 }
 
+.purrito-banner {
+  position: absolute;
+  z-index: -1 !important;
+  width: 100%;
+  height: 20rem;
+  background-position: center;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -38,17 +51,18 @@ p {
 
 .navbar {
   height: var(--navHeight);
-  margin-left: -15px;
-  margin-right: -15px;
+  width: 100%;
   background-color: var(--salsaRed);
-  z-index: 2;
+  z-index: 999;
+  position: absolute;
+  top: 0;
 }
 
 .title {
   color: var(--tortillaOrange) !important;
   font-size: xx-large !important;
   font-weight: bold;
-  margin-left: 2rem;
+  margin: 2rem;
   text-decoration: none;
 }
 
@@ -111,6 +125,7 @@ p {
 .info-panel {
   border-radius: 1rem;
   background: var(--quesoBlanco);
+  color: var(--salsaRed);
   padding: 2rem;
   margin: 2rem 2rem;
   box-shadow: var(--salsaRed) 0rem 0.45rem 0.75rem;
@@ -120,7 +135,7 @@ p {
   border-radius: 1rem;
   background: var(--salsaRed);
   padding: 2rem;
-  margin: 2rem 2rem;
+  margin: 10rem 10rem 4rem 10rem;
   color: var(--tortillaOrange);
   box-shadow: var(--purritoverlay) 0rem 0.45rem 0.75rem;
 }
@@ -132,10 +147,6 @@ p {
 .flex-child {
   flex: 1;
 }
-
-.flex-child-input {
-  flex: 16;
-} 
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
