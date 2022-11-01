@@ -1,0 +1,30 @@
+{
+    "orders": [
+        {
+            "id" : 0,
+            "burritos" : [
+                {
+                    "protein" : "beef",
+                    "tortilla" : "flour tortilla",
+                    "rice" : "white",
+                    "peppers&onions" : "peppers & onions",
+                    "cheese" : "cotija",
+                    "purrito" : true
+                }
+            ]
+        },
+        {
+            "id" : 9999,
+            "burritos" : [
+                {
+                    "protein" : "beef",
+                    "tortilla" : "flour tortilla",
+                    "rice" : "no rice",
+                    "peppers&onions" : "no peppers & onions",
+                    "cheese" : "no cheese",
+                    "purrito" : false
+                }
+            ]
+        }
+    ]
+}
