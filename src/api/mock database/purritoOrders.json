@@ -7,7 +7,7 @@
                     "protein" : "beef",
                     "tortilla" : "flour tortilla",
                     "rice" : "white",
-                    "peppers&onions" : "peppers & onions",
+                    "peppersAndOnions" : "peppers & onions",
                     "cheese" : "cotija",
                     "purrito" : true
                 }
@@ -20,7 +20,7 @@
                     "protein" : "beef",
                     "tortilla" : "flour tortilla",
                     "rice" : "no rice",
-                    "peppers&onions" : "no peppers & onions",
+                    "peppersAndOnions" : "no peppers & onions",
                     "cheese" : "no cheese",
                     "purrito" : false
                 }
